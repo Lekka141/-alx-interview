@@ -7,7 +7,8 @@ def rotate_2d_matrix(matrix):
     """Rotates a n by n 2D matrix 90 degrees clockwise in place.
     """
     # Check if the matrix is a list of lists
-    if not isinstance(matrix, list) or len(matrix) == 0 or not all(isinstance(row, list) for row in matrix):
+    if (not isinstance(matrix, list) or len(matrix) == 0 or
+            not all(isinstance(row, list) for row in matrix)):
         return
 
     n = len(matrix)
